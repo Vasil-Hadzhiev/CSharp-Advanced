@@ -7,7 +7,7 @@
     <ProjectGuid>{546CAB72-001F-42BF-9924-1C2BF35D8D01}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_06.TruckTour</RootNamespace>
-    <AssemblyName>_06.TruckTour</AssemblyName>
+    <AssemblyName>06.TruckTour</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="TruckTour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

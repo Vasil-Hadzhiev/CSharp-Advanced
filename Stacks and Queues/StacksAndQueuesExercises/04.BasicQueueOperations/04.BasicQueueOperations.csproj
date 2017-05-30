@@ -7,7 +7,7 @@
     <ProjectGuid>{D22C06B2-AF33-4CF1-A123-F5BAD130E031}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_04.BasicQueueOperations</RootNamespace>
-    <AssemblyName>_04.BasicQueueOperations</AssemblyName>
+    <AssemblyName>04.BasicQueueOperations</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BasicQueueOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

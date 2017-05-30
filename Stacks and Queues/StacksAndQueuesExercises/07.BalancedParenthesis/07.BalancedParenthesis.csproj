@@ -7,7 +7,7 @@
     <ProjectGuid>{26B7B309-D27A-4D70-BDD1-F223149D06E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_07.BalancedParenthesis</RootNamespace>
-    <AssemblyName>_07.BalancedParenthesis</AssemblyName>
+    <AssemblyName>07.BalancedParenthesis</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BalancedParenthesis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

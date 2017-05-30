@@ -7,7 +7,7 @@
     <ProjectGuid>{18E8EB59-73E3-4040-88B0-7BD8BCB75AEA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_03.MaximumElement</RootNamespace>
-    <AssemblyName>_03.MaximumElement</AssemblyName>
+    <AssemblyName>03.MaximumElement</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MaximumElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

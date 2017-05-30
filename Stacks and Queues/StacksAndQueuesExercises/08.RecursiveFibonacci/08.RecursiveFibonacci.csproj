@@ -7,7 +7,7 @@
     <ProjectGuid>{114DB922-5863-40F4-B11F-F858D4DBD203}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_08.RecursiveFibonacci</RootNamespace>
-    <AssemblyName>_08.RecursiveFibonacci</AssemblyName>
+    <AssemblyName>08.RecursiveFibonacci</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="RecursiveFibonacci.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,7 @@
     <ProjectGuid>{E54AEDD7-B225-4931-8B12-FD29DC04A360}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_02.BasicStackOperations</RootNamespace>
-    <AssemblyName>_02.BasicStackOperations</AssemblyName>
+    <AssemblyName>02.BasicStackOperations</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BasicStackOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

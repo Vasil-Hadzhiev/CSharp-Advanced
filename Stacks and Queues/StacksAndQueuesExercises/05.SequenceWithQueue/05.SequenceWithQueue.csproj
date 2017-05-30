@@ -7,7 +7,7 @@
     <ProjectGuid>{75EC5949-0A3F-4DB5-81EC-2C33EDDB1C89}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_05.SequenceWithQueue</RootNamespace>
-    <AssemblyName>_05.SequenceWithQueue</AssemblyName>
+    <AssemblyName>05.SequenceWithQueue</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="SequenceWithQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
