@@ -7,7 +7,7 @@
     <ProjectGuid>{B5D48482-C366-47E9-B13A-143B9F9A86EC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_02.SimpleCalculator</RootNamespace>
-    <AssemblyName>_02.SimpleCalculator</AssemblyName>
+    <AssemblyName>02.SimpleCalculator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="SimpleCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

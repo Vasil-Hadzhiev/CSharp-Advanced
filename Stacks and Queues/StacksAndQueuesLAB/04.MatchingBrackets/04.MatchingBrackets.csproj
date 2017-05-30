@@ -7,7 +7,7 @@
     <ProjectGuid>{8AA38A06-13F5-4E90-9071-878AEA410E06}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_04.MatchingBrackets</RootNamespace>
-    <AssemblyName>_04.MatchingBrackets</AssemblyName>
+    <AssemblyName>04.MatchingBrackets</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MatchingBrackets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

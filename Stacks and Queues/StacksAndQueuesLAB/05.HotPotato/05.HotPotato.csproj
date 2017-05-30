@@ -7,7 +7,7 @@
     <ProjectGuid>{2A8E1A8B-1976-4452-BEE5-F5DF9CFF18E6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_05.HotPotato</RootNamespace>
-    <AssemblyName>_05.HotPotato</AssemblyName>
+    <AssemblyName>05.HotPotato</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="HotPotato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
