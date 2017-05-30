@@ -21,6 +21,8 @@ namespace _12.LegendaryFarming
 
             var farmingComplete = false;
 
+            var legendaryMaterial = string.Empty;
+
             while (true)
             {
                 var currentMaterials = Console.ReadLine().
@@ -39,6 +41,8 @@ namespace _12.LegendaryFarming
 
                         if (legendaryMaterials[type] >= 250)
                         {
+                            legendaryMaterial = type;
+                            legendaryMaterials[type] -= 250;
                             farmingComplete = true;
                             break;
                         }
@@ -60,16 +64,9 @@ namespace _12.LegendaryFarming
                 }
             }
 
-            var legendaryMaterial = legendaryMaterials.
-                OrderByDescending(x => x.Value).
-                First().
-                Key;
-
             var legendaryItem = ObtainedLegendaryItem(legendaryMaterial);
 
             Console.WriteLine($"{legendaryItem} obtained!");
-
-            legendaryMaterials[legendaryMaterial] -= 250;
 
             var sortedLegendaryMaterials = legendaryMaterials.
                 OrderByDescending(x => x.Value).
