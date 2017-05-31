@@ -16,28 +16,7 @@ namespace _04.PascalTriangle
 
             var count = 1;
 
-            if (n == 1)
-            {
-                Console.WriteLine(1);
-                return;
-            }
-
-            for (int i = 0; i < 2; i++)
-            {
-                matrix[i] = new long[count];
-                var currentRow = matrix[i];
-
-                for (int j = 0; j < currentRow.Length; j++)
-                {
-                    matrix[i][j] = 1;
-                }
-
-                count++;
-            }
-
-            count = 3;
-
-            for (int i = 2; i < matrix.Length; i++)
+            for (int i = 0; i < matrix.Length; i++)
             {
                 matrix[i] = new long[count];
                 var currentRow = matrix[i];
@@ -52,8 +31,6 @@ namespace _04.PascalTriangle
 
                 count++;
             }
-
-            matrix[2][1] = 2;
 
             for (int i = 0; i < matrix.Length; i++)
             {
