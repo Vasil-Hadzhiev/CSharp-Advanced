@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BiggestSumOf2x2Matrix", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.GroupNumbers", "03.GroupNumbers\03.GroupNumbers.csproj", "{0CA8886A-F1E0-47EB-A3F7-CBE5A8B65752}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.PascalTriangle", "04.PascalTriangle\04.PascalTriangle.csproj", "{35768AC0-CD11-4908-A48F-61358A71B419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0CA8886A-F1E0-47EB-A3F7-CBE5A8B65752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CA8886A-F1E0-47EB-A3F7-CBE5A8B65752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CA8886A-F1E0-47EB-A3F7-CBE5A8B65752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35768AC0-CD11-4908-A48F-61358A71B419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35768AC0-CD11-4908-A48F-61358A71B419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35768AC0-CD11-4908-A48F-61358A71B419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35768AC0-CD11-4908-A48F-61358A71B419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

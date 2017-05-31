@@ -19,9 +19,20 @@ namespace _03.GroupNumbers
             var sizes = new int[3];
             var offsets = new int[3];
 
-            foreach (var number in numbers)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                var reminder = number % 3;
+                var reminder = 0;
+                var currentNumber = numbers[i];
+                if (currentNumber < 0)
+                {
+                    currentNumber *= -1;
+                    reminder = currentNumber % 3;
+                }
+                else
+                {
+                    reminder = currentNumber % 3;
+                }
+                
                 sizes[reminder]++;
             }
 
@@ -32,13 +43,24 @@ namespace _03.GroupNumbers
                 new int[sizes[2]]
             };
 
-            foreach (var number in numbers)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                var reminder = number % 3;
+                var reminder = 0;
+                var currentNumber = numbers[i];
+                if (currentNumber < 0)
+                {
+                    reminder = (currentNumber * -1) % 3;
+                }
+                else
+                {
+                    reminder = currentNumber % 3;
+                }
+                
                 var index = offsets[reminder];
-                matrix[reminder][index] = number;
+                matrix[reminder][index] = currentNumber;
                 offsets[reminder]++;
             }
+
 
             for (int i = 0; i < matrix.GetLength(0); i++)
             {
