@@ -37,13 +37,17 @@ namespace _05.RubiksMatrix
 
                 switch (command)
                 {
-                    case "up": ShiftMatrixUp(index, count, matrix);
+                    case "up":
+                        ShiftMatrixUp(index, count, matrix);
                         break;
-                    case "down": ShiftMatrixDown(index, count, matrix);
+                    case "down":
+                        ShiftMatrixDown(index, count, matrix);
                         break;
-                    case "left": ShiftMatrixLeft(index, count, matrix);
+                    case "left":
+                        ShiftMatrixLeft(index, count, matrix);
                         break;
-                    case "right": ShiftMatrixRight(index, count, matrix);
+                    case "right":
+                        ShiftMatrixRight(index, count, matrix);
                         break;
                     default:
                         break;
@@ -51,6 +55,7 @@ namespace _05.RubiksMatrix
             }
 
             RearrangeMatrix(matrix);
+
         }
 
         private static void FillMatrix(int rows, int cols, int[,] matrix)
@@ -129,23 +134,23 @@ namespace _05.RubiksMatrix
 
         private static void RearrangeMatrix(int[,] matrix)
         {
+            var element = 1;
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
                 for (int col = 0; col < matrix.GetLength(1); col++)
                 {
-                    var element = matrix.GetLength(1) * row + col + 1;
                     var currentElement = matrix[row, col];
                     if (currentElement != element)
                     {
-                        for (int sortedRow = 0; sortedRow < matrix.GetLength(0); sortedRow++)
+                        for (int swapRow = 0; swapRow < matrix.GetLength(0); swapRow++)
                         {
-                            for (int sortedCol = 0; sortedCol < matrix.GetLength(1); sortedCol++)
+                            for (int swapCol = 0; swapCol < matrix.GetLength(1); swapCol++)
                             {
-                                if (matrix[sortedRow, sortedCol] == element)
+                                if (matrix[swapRow, swapCol] == element)
                                 {
-                                    matrix[sortedRow, sortedCol] = currentElement;
+                                    matrix[swapRow, swapCol] = currentElement;
                                     matrix[row, col] = element;
-                                    Console.WriteLine($"Swap ({row}, {col}) with ({sortedRow}, {sortedCol})");
+                                    Console.WriteLine($"Swap ({row}, {col}) with ({swapRow}, {swapCol})");
                                 }
                             }
                         }
@@ -154,6 +159,7 @@ namespace _05.RubiksMatrix
                     {
                         Console.WriteLine("No swap required");
                     }
+                    element++;
                 }
             }
         }
