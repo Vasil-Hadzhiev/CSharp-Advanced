@@ -11,7 +11,8 @@ namespace _09.Crossfire
         public static void Main()
         {
             var matrixTokens = Console.ReadLine().
-                Split().
+                Split(new char[] { ' ' },
+                StringSplitOptions.RemoveEmptyEntries).
                 Select(int.Parse).
                 ToArray();
 
@@ -32,7 +33,8 @@ namespace _09.Crossfire
                 }
 
                 var fireParams = inputLine.
-                Split().
+                Split(new char[] { ' ' },
+                StringSplitOptions.RemoveEmptyEntries).
                 Select(int.Parse).
                 ToArray();
 
