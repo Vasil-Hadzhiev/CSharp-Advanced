@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.RadioactiveMutantVampire
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Crossfire", "09.Crossfire\09.Crossfire.csproj", "{A555EE32-1716-4CE3-8A48-4D4877C68FC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.MatrixStringRotation", "12.MatrixStringRotation\12.MatrixStringRotation.csproj", "{50176BBF-8684-4940-83BD-A1B6D64F5F5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{A555EE32-1716-4CE3-8A48-4D4877C68FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A555EE32-1716-4CE3-8A48-4D4877C68FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A555EE32-1716-4CE3-8A48-4D4877C68FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50176BBF-8684-4940-83BD-A1B6D64F5F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50176BBF-8684-4940-83BD-A1B6D64F5F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50176BBF-8684-4940-83BD-A1B6D64F5F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50176BBF-8684-4940-83BD-A1B6D64F5F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
