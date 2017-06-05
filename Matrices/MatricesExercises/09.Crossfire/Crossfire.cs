@@ -11,8 +11,7 @@ namespace _09.Crossfire
         public static void Main()
         {
             var matrixTokens = Console.ReadLine().
-                Split(new char[] { ' ' },
-                StringSplitOptions.RemoveEmptyEntries).
+                Split().
                 Select(int.Parse).
                 ToArray();
 
@@ -32,97 +31,63 @@ namespace _09.Crossfire
                     break;
                 }
 
-                var fireParams = inputLine.
-                Split(new char[] { ' ' },
-                StringSplitOptions.RemoveEmptyEntries).
-                Select(int.Parse).
-                ToArray();
+                var nukeParams = inputLine.
+                    Split().
+                    Select(int.Parse).
+                    ToArray();
 
-                var impactRow = fireParams[0];
-                var impactCol = fireParams[1];
-                var radius = fireParams[2];
+                var impactRow = nukeParams[0];
+                var impactCol = nukeParams[1];
+                var radius = nukeParams[2];
 
-                DestroyCells(matrix, impactRow, impactCol, radius, rows);
-                matrix = ResizeMatrix(rows, matrix);
+                NukeMatrix(matrix, impactRow, impactCol, radius, rows);
+                matrix = ResizeMatrix(matrix, rows);
             }
-
-            PrintMatrix(matrix, rows);
+            PrintMatrix(matrix);
         }
 
         private static void FillMatrix(int[][] matrix, int rows, int cols)
         {
-            var count = 1;
+            var currentCellNumber = 1;
             for (int row = 0; row < rows; row++)
             {
                 matrix[row] = new int[cols];
                 for (int col = 0; col < matrix[row].Length; col++)
                 {
-                    matrix[row][col] = count;
-                    count++;
+                    matrix[row][col] = currentCellNumber;
+                    currentCellNumber++;
                 }
             }
         }
 
-        private static void DestroyCells(int[][] matrix, int impactRow, int impactCol, int radius, int rows)
+        private static void NukeMatrix(int[][] matrix, int impactRow, int impactCol, int radius, int rows)
         {
-            var lastRow = 0;
-            var firstRow = 0;
-
-            if (impactRow + radius >= rows)
+            for (int row = 0; row < rows; row++)
             {
-                lastRow = rows - 1;
-            }
-            else
-            {
-                lastRow = impactRow + radius;
-            }
-
-            if (impactRow - radius < 0)
-            {
-                firstRow = 0;
-            }
-            else
-            {
-                firstRow = impactRow - radius;
-            }
-
-            for (int row = firstRow; row <= lastRow; row++)
-            {
-                if (matrix[row].Length < impactCol)
+                if (row >= impactRow - radius && row <= impactRow + radius && row != impactRow)
                 {
-                    continue;
+                    for (int col = 0; col < matrix[row].Length; col++)
+                    {
+                        if (col == impactCol)
+                        {
+                            matrix[row][col] = 0;
+                        }
+                    }
                 }
-                matrix[row][impactCol] = 0;
-            }
-
-            var firstCol = 0;
-            var lastCol = 0;
-
-            if (impactCol + radius >= matrix[impactRow].Length)
-            {
-                lastCol = matrix[impactRow].Length - 1;
-            }
-            else
-            {
-                lastCol = impactRow + radius;
-            }
-
-            if (impactCol - radius < 0)
-            {
-                firstCol = 0;
-            }
-            else
-            {
-                firstCol = impactCol - radius;
-            }
-
-            for (int col = firstCol; col <= lastCol; col++)
-            {
-                matrix[impactRow][col] = 0;
+                else if (row == impactRow)
+                {
+                    for (int col = 0; col < matrix[row].Length; col++)
+                    {
+                        if (col >= impactCol - radius && col <= impactCol + radius)
+                        {
+                            matrix[row][col] = 0;
+                        }
+                    }
+                }
             }
         }
 
-        private static int[][] ResizeMatrix(int rows, int[][] matrix)
+        private static int[][] ResizeMatrix(int[][] matrix, int rows)
         {
             for (int row = 0; row < rows; row++)
             {
@@ -172,9 +137,9 @@ namespace _09.Crossfire
             return newMatrix;
         }
 
-        private static void PrintMatrix(int[][] matrix, int rows)
+        private static void PrintMatrix(int[][] matrix)
         {
-            for (int row = 0; row < rows; row++)
+            for (int row = 0; row < matrix.Length; row++)
             {
                 if (matrix[row].Length == 0)
                 {
