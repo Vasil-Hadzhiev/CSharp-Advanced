@@ -18,15 +18,8 @@ namespace _15.MelrahShake
                 var index = element.IndexOf(pattern);
                 var lastIndex = element.LastIndexOf(pattern);
 
-                if (index == -1)
+                if (index == -1 || index == lastIndex)
                 {
-                    Console.WriteLine("No shake.");
-                    break;
-                }
-
-                if (index == lastIndex)
-                {
-                    Console.WriteLine("No shake.");
                     break;
                 }
 
@@ -40,11 +33,11 @@ namespace _15.MelrahShake
 
                 if (pattern.Length == 0)
                 {
-                    Console.WriteLine("No shake.");
                     break;
                 }
             }
 
+            Console.WriteLine("No shake.");
             Console.WriteLine(element);
         }
     }
