@@ -25,7 +25,7 @@ namespace _06.SentenceExtractor
             {
                 var sentence = match.Groups[0].Value;
 
-                if (sentence.Contains(keyword))
+                if (sentence.Split().ToArray().Contains(keyword))
                 {
                     Console.WriteLine(sentence);
                 }
