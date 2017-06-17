@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SentenceExtractor", "06.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.ValidUsernames", "07.ValidUsernames\07.ValidUsernames.csproj", "{1C1F72FA-A390-4BD9-9072-8D81FD6ACE27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.QueryMess", "09.QueryMess\09.QueryMess.csproj", "{22FA84A4-4851-4DFB-9FF4-CE51FCFC17C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{1C1F72FA-A390-4BD9-9072-8D81FD6ACE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C1F72FA-A390-4BD9-9072-8D81FD6ACE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C1F72FA-A390-4BD9-9072-8D81FD6ACE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FA84A4-4851-4DFB-9FF4-CE51FCFC17C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FA84A4-4851-4DFB-9FF4-CE51FCFC17C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FA84A4-4851-4DFB-9FF4-CE51FCFC17C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FA84A4-4851-4DFB-9FF4-CE51FCFC17C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
