@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace _11.SemanticHTML
 {
-    class Program
+    public class SemanticHTML
     {
-        static void Main(string[] args)
+        public static void Main()
         {
         }
     }
