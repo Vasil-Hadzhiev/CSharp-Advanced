@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.WeakStudents", "08.WeakS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.StudentsEnrolledIn2014Or2015", "09.StudentsEnrolledIn2014Or2015\09.StudentsEnrolledIn2014Or2015.csproj", "{3B26A40E-52A5-471F-84C5-3AC4B0CF190D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.GroupByGroup", "10.GroupByGroup\10.GroupByGroup.csproj", "{073A5ABD-055C-4D6D-8DD7-0C67BC6FB92C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.StudentJoinedToSpecialties", "11.StudentJoinedToSpecialties\11.StudentJoinedToSpecialties.csproj", "{29E99BD9-7E43-4396-8C72-9D43F8C1C38C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{3B26A40E-52A5-471F-84C5-3AC4B0CF190D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B26A40E-52A5-471F-84C5-3AC4B0CF190D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B26A40E-52A5-471F-84C5-3AC4B0CF190D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073A5ABD-055C-4D6D-8DD7-0C67BC6FB92C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073A5ABD-055C-4D6D-8DD7-0C67BC6FB92C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073A5ABD-055C-4D6D-8DD7-0C67BC6FB92C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073A5ABD-055C-4D6D-8DD7-0C67BC6FB92C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E99BD9-7E43-4396-8C72-9D43F8C1C38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E99BD9-7E43-4396-8C72-9D43F8C1C38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E99BD9-7E43-4396-8C72-9D43F8C1C38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E99BD9-7E43-4396-8C72-9D43F8C1C38C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
