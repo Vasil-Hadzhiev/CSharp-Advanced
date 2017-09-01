@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.JediGalaxy", "02.JediGal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.JediCodeX", "03.JediCodeX\03.JediCodeX.csproj", "{100C71BC-8F8D-4452-A419-045122A08569}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.JediDreams", "04.JediDreams\04.JediDreams.csproj", "{D53A8C30-DF43-4AF4-A039-4282A532D91C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{100C71BC-8F8D-4452-A419-045122A08569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{100C71BC-8F8D-4452-A419-045122A08569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{100C71BC-8F8D-4452-A419-045122A08569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53A8C30-DF43-4AF4-A039-4282A532D91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53A8C30-DF43-4AF4-A039-4282A532D91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53A8C30-DF43-4AF4-A039-4282A532D91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53A8C30-DF43-4AF4-A039-4282A532D91C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
